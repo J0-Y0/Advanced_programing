@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}
+home
+{% endblock title %}
+
+{% block content %}
+<h1
+    style="padding-left: 30%;padding-top: 15%; font-size :55px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    Social Network </h1>
+<h3>{{hello}}</h3>
+
+
+<div id="about" style="display: none; 
+    margin-left:40px !important;margin-top: 20%; font-size :35px; font-family:'Times New Roman', Times, serif ">
+
+    ADDIS ABABA SCIENCE AND TECHNOLOGY UNIVERSITY <br><br>
+    COLLEGE OF ELECTRICAL AND MECHANICAL ENGINEERING <br> <br>
+    DEPARTMENT OF ELECTRICAL AND COMPUTER ENGINEERING <br><br> (COMPUTER STREAM) <br> <br>
+    <p><i>Advanced programing django project</i></p>
+    <p>
+
+
+        Name = yosef Emyayu
+        <br>
+        Id =ETS1310/10
+    </p>
+
+</div>
+
+<button onclick="aboutme()"
+    style="margin-left: 40%;margin-top: 20%; font-size :25px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <a href="#about">about the developer</a>
+</button>
+
+
+
+
+{% endblock content %}
+
+
+{% block scripts %}
+<script>
+    function aboutme() {
+        x = document.getElementById('about');
+        if (x.style.display == 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+
+    }
+    $(document).ready(function () {
+        console.log('working')
+    })
+</script>
+{% endblock scripts %}

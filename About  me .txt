@@ -1,0 +1,6 @@
+Name :
+	yosef Emyayu
+ id :
+	ETS1310/10
+section:
+	c
